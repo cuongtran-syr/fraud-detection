@@ -12,3 +12,6 @@ def pandas_entropy(column, base=None):
   vc = pd.Series(column).value_counts(normalize=True, sort=False)
   base = e if base is None else base
   return -(vc * np.log(vc)/np.log(base)).sum()
+
+
+def is_
